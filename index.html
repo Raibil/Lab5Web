@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript</title>
+</head>
+<body>
+
+    <h1>Latihan Javascript</h1>
+    <p id="pesan">Konten awal.</p>
+
+    <h3>Tombol Sembunyikan / Tampilkan</h3>
+<button type="button" id="tombolToggle">Sembunyikan</button>
+<p id="elemenToggle">Teks ini bisa disembunyikan dan ditampilkan kembali.</p>
+
+<h3>Form Data Mahasiswa</h3>
+<form id="formKosong" novalidate>
+  <label for="namaForm">Nama:</label>
+  <input type="text" id="namaForm"><br><br>
+
+  <label for="emailForm">Email:</label>
+  <input type="text" id="emailForm"><br><br>
+
+  <button type="submit">Kirim</button>
+</form>
+<p id="pesanForm"></p>
+
+    <label for="bilangan">Masukkan bilangan bulat:</label> 
+<input type="number" id="bilangan" step="1"> 
+<button type="button" onclick="cekBilangan()">Periksa</button> 
+<p id="hasilBilangan"></p> 
+
+<h3>Daftar Menu Makanan</h3>
+<label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
+<label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
+<label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
+<label><input type="checkbox" class="menu" value="3000"> Nasi Putih — Rp3.000</label><br>
+<label><input type="checkbox" class="menu" value="2000"> Es Teh — Rp2.000</label><br>
+<p>Total: Rp<span id="total">0</span></p>
+
+<button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button> 
+<button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button> 
+<button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
