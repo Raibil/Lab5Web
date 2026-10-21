@@ -99,7 +99,7 @@ Modulus: 1
 
 Untuk `operasiDasar(10, 0)`, baris Pembagian dan Modulus menampilkan "Tidak dapat dibagi nol".
 
-![Latihan 3: hasil di Console](screenshots/latihan-03-console.png)
+![Latihan 3: hasil di Console](screenshots/latihan-03-hasil.png)
 *Latihan 3: hasil di Console*
 
 ## Latihan 4: Seleksi Kondisi if–else
