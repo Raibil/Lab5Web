@@ -257,9 +257,6 @@ function hitungTotal() {
 
 `toLocaleString("id-ID")` memformat angka dengan titik sebagai pemisah ribuan. Event `change` membuat total diperbarui setiap kali centang berubah.
 
-![Latihan 8: sebagian menu dipilih](screenshots/latihan-08-sebagian.png)
-*Latihan 8: sebagian menu dipilih*
-
 ![Latihan 8: semua menu dipilih](screenshots/latihan-08-semua.png)
 *Latihan 8: semua menu dipilih*
 
