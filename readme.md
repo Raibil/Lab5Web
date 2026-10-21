@@ -202,9 +202,6 @@ function cekBilangan() {
 ![Latihan 6: bilangan ganjil](screenshots/latihan-06-ganjil.png)
 *Latihan 6: bilangan ganjil*
 
-![Latihan 6: input tidak valid](screenshots/latihan-06-tidak-valid.png)
-*Latihan 6: input tidak valid*
-
 ## Latihan 7: Mengubah Warna Halaman
 
 **Tujuan:** mengubah warna latar dengan tiga tombol yang memakai satu function berparameter, sehingga kode tidak berulang.
