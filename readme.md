@@ -1,15 +1,6 @@
-# Lab5Web: Praktikum 5, JavaScript Dasar dan Manipulasi HTML
 
-| Keterangan | Isi |
-|---|---|
-| Nama | ................................................ |
-| NIM | ................................................ |
-| Kelas | ................................................ |
-| Mata Kuliah | Pemrograman Web |
-| Pertemuan | 6 (Praktikum 5) |
-| Topik | JavaScript Dasar dan Manipulasi Elemen HTML |
-
-> Semua screenshot disimpan pada folder `screenshots/`. Ganti gambar yang belum ada dengan screenshot hasil praktikum masing-masing.
+| Nama | Raihan Nabil Mas'ud |
+| NIM | 312510094 |
 
 ## Tujuan Praktikum
 
@@ -20,90 +11,12 @@
 - Membuat interaksi sederhana pada form dan melakukan validasi input.
 - Mendokumentasikan pekerjaan praktikum beserta hasil pengujiannya.
 
-## Persiapan dan Cara Menjalankan
-
-**Perangkat:** laptop/PC, browser modern (Chrome, Edge, atau Firefox), dan Visual Studio Code.
-
-**Struktur berkas repository:**
-
-```text
-Lab5Web/
-├── README.md
-├── index.html          (Latihan 1-8 dan Eksperimen Mandiri)
-├── script.js
-├── mini_project.html   (Kalkulator Nilai Mahasiswa)
-├── mini_project.js
-├── soal7.html          (Pertanyaan 7: validasi form)
-├── soal7.js
-└── screenshots/        (bukti hasil setiap latihan)
-```
-
 ### Cara menjalankan
 
 - Unduh atau clone repository `Lab5Web`.
 - Buka `index.html` dengan klik dua kali (atau dengan ekstensi Live Server di VS Code). Halaman Mini Project dibuka lewat `mini_project.html`, dan soal 7 lewat `soal7.html`.
 - Buka Console dengan menekan F12, lalu pilih tab Console (atau klik kanan, Inspect/Periksa, Console).
 - Beberapa latihan memakai `prompt()` yang langsung muncul saat halaman dimuat. Agar tidak saling mengganggu, uji satu latihan per satu dengan memberi komentar (`//`) pada blok latihan lain di `script.js`.
-
-### Kerangka index.html
-
-Semua elemen untuk Latihan 6–8 dan Eksperimen Mandiri digabung pada satu `index.html` berikut. Berkas `script.js` dihubungkan di akhir `<body>` agar semua elemen sudah tersedia saat script berjalan.
-
-```html
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Praktikum JavaScript</title>
-</head>
-<body>
-  <h1>Pengenalan JavaScript</h1>
-  <p id="pesan">Konten awal.</p>
-
-  <!-- Latihan 6: bilangan genap atau ganjil -->
-  <h3>Latihan 6: Genap atau Ganjil</h3>
-  <label for="bilangan">Masukkan bilangan bulat:</label>
-  <input type="number" id="bilangan" step="1">
-  <button type="button" onclick="cekBilangan()">Periksa</button>
-  <p id="hasilBilangan"></p>
-
-  <!-- Latihan 7: warna latar -->
-  <h3>Latihan 7: Warna Latar</h3>
-  <button type="button" onclick="ubahWarnaLatar('lightgreen')">Latar Hijau</button>
-  <button type="button" onclick="ubahWarnaLatar('white')">Latar Putih</button>
-  <button type="button" onclick="ubahWarnaLatar('lightyellow')">Latar Kuning</button>
-
-  <!-- Latihan 8 + Eksperimen 5: menu makanan -->
-  <h3>Daftar Menu Makanan</h3>
-  <label><input type="checkbox" class="menu" value="5000"> Ayam Goreng — Rp5.000</label><br>
-  <label><input type="checkbox" class="menu" value="500"> Tempe — Rp500</label><br>
-  <label><input type="checkbox" class="menu" value="2500"> Telur Dadar — Rp2.500</label><br>
-  <label><input type="checkbox" class="menu" value="3000"> Nasi Putih — Rp3.000</label><br>
-  <label><input type="checkbox" class="menu" value="2000"> Es Teh — Rp2.000</label><br>
-  <p>Total: Rp<span id="total">0</span></p>
-
-  <!-- Eksperimen 4: validasi kolom tidak boleh kosong -->
-  <h3>Form Data Mahasiswa</h3>
-  <form id="formKosong" novalidate>
-    <label for="namaForm">Nama:</label>
-    <input type="text" id="namaForm"><br><br>
-    <label for="emailForm">Email:</label>
-    <input type="text" id="emailForm"><br><br>
-    <button type="submit">Kirim</button>
-  </form>
-  <p id="pesanForm"></p>
-
-  <!-- Eksperimen 6: sembunyikan / tampilkan -->
-  <h3>Tombol Sembunyikan / Tampilkan</h3>
-  <button type="button" id="tombolToggle">Sembunyikan</button>
-  <p id="elemenToggle">Teks ini bisa disembunyikan dan ditampilkan kembali.</p>
-
-  <!-- script diletakkan di akhir body agar semua elemen sudah tersedia -->
-  <script src="script.js"></script>
-</body>
-</html>
-```
 
 ## Latihan 1: Menampilkan Output
 
